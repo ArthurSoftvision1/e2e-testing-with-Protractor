@@ -30,5 +30,11 @@ describe('ng5-create-routes App', () => {
     page.navigateTo();
     page.getHomeButton().click();
     expect(page.getHometext()).toEqual('Home Page')
+  });
+
+  it('should route to user list', () => {
+    page.navigateTo();
+    page.getUserButton().click();
+    expect(page.getUserText()).toEqual('User List')
   })
 });
