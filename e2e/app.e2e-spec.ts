@@ -25,4 +25,10 @@ describe('ng5-create-routes App', () => {
     // browser.pause();
     expect(page.getAboutText()).toEqual('About Page')
   });
+
+  it('should route to home page', () => {
+    page.navigateTo();
+    page.getHomeButton().click();
+    expect(page.getHometext()).toEqual('Home Page')
+  })
 });

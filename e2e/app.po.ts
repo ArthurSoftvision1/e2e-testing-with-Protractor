@@ -13,7 +13,15 @@ export class AppPage {
     return element(by.css('[routerlink="/about"]'));
   }
 
+  getHomeButton() {
+    return element(by.css('[routerlink="/"]'));
+  }
+
   getAboutText() {
     return element(by.css('app-about h2')).getText();
+  }
+
+  getHometext() {
+    return element(by.css('app-home h2')).getText();
   }
 }
