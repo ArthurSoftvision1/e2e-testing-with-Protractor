@@ -32,4 +32,8 @@ export class AppPage {
   getUserText() {
     return element(by.css('app-user-list h2')).getText();
   }
+
+  findNestedClass() {
+    return element(by.css(".nested-class"));
+  }
 }
